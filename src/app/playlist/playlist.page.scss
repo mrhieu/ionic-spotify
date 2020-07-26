@@ -1,0 +1,26 @@
+.album-cover {
+  text-align: center;
+  padding: 8px 16px;
+
+  ion-thumbnail {
+    width: 240px;
+    height: 240px;
+    margin: 0 auto;
+  }
+}
+
+.album-info {
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--ion-color-medium);
+  padding: 8px 16px;
+}
+
+.buttons {
+  padding: 0 12px;
+  margin-bottom: 12px;
+}
+
+.song-list {
+  margin-bottom: 24px;
+}

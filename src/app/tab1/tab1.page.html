@@ -16,7 +16,7 @@
 
     <div class="scroll-horizontal">
       <div class="scroll-item" *ngFor="let i of [0,1,2]">
-        <div class="media-card">
+        <div class="media-card" routerLink="playlist">
           <ion-row class="grid-no-padding ion-align-items-center">
             <ion-col size="auto">
               <ion-thumbnail>
@@ -39,7 +39,7 @@
     </div>
 
     <div class="scroll-horizontal">
-      <div class="scroll-item size-sm" *ngFor="let i of [0,1,2,3,4,5,6]">
+      <div class="scroll-item size-sm" routerLink="playlist" *ngFor="let i of [0,1,2,3,4,5,6]">
         <div class="card-thumbnail size-sm" [style.backgroundImage]="'url(assets/img/img_' + (i%5 + 1) + '.png)'"></div>
         <div class="item-title">
           <ion-icon name="shuffle-outline"></ion-icon>
@@ -55,7 +55,7 @@
     </div>
 
     <div class="scroll-horizontal">
-      <div class="scroll-item size-md" *ngFor="let i of [0,1,2,3,4,5,6]">
+      <div class="scroll-item size-md" routerLink="playlist" *ngFor="let i of [0,1,2,3,4,5,6]">
         <div class="card-thumbnail size-md" [style.backgroundImage]="'url(assets/img/img_' + (i%5 + 1) + '.png)'"></div>
         <div class="item-title">
           <ion-icon name="shuffle-outline"></ion-icon>
@@ -71,7 +71,7 @@
     </div>
 
     <div class="scroll-horizontal">
-      <div class="scroll-item size-md" *ngFor="let i of [0,1,2,3,4,5,6]">
+      <div class="scroll-item size-md" routerLink="playlist" *ngFor="let i of [0,1,2,3,4,5,6]">
         <div class="card-thumbnail size-md" [style.backgroundImage]="'url(assets/img/img_' + (i%5 + 1) + '.png)'"></div>
         <div class="item-title">
           <ion-icon name="shuffle-outline"></ion-icon>

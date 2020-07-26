@@ -1,0 +1,59 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="medium" defaultHref="/tabs/tab1"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="album-cover">
+    <ion-thumbnail>
+      <img src="{{'assets/img/img_2.png'}}" alt="">
+    </ion-thumbnail>
+  </div>
+
+  <div class="album-info">
+    <div>
+      John Mayer, Ariana Grande, Ed Sheeran and more
+    </div>
+    <div>
+      Made for <ion-text color="dark">Hieu Pham</ion-text>
+    </div>
+    <div>3h 53m</div>
+  </div>
+
+  <div class="buttons">
+    <ion-row class="ion-align-items-center">
+      <ion-col>
+        <ion-button fill="clear" color="medium">
+        	<ion-icon slot="icon-only" size="small" name="heart-outline"></ion-icon>
+        </ion-button>
+        <ion-button fill="clear" color="medium">
+        	<ion-icon slot="icon-only" size="small" name="ellipsis-horizontal-sharp"></ion-icon>
+        </ion-button>
+      </ion-col>
+
+      <ion-col size="auto">
+        <ion-fab-button color="primary" size="small">
+          <ion-icon name="play-sharp" size="small"></ion-icon>
+        </ion-fab-button>
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <div class="song-list">
+    <ion-list>
+      <ion-item lines="none" *ngFor="let i of [0,1,2,3,4,5,6]">
+        <ion-thumbnail slot="start">
+          <img src="{{'assets/img/img_' + (i%5 + 1) + '.png'}}" alt="">
+        </ion-thumbnail>
+        <ion-label>
+          <h3>Song number {{i + 1}}</h3>
+          <p>Ed Sheeran</p>
+        </ion-label>
+        <ion-icon slot="end" name="ellipsis-horizontal-sharp" size="small"></ion-icon>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
