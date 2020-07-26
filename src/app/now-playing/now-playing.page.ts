@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
 
 @Component({
   selector: 'app-now-playing',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NowPlayingPage implements OnInit {
 
-  constructor() { }
+  constructor(public modalCtrl: ModalController) { }
 
   ngOnInit() {
+  }
+
+  closeModal() {
+    this.modalCtrl.dismiss();
   }
 
 }

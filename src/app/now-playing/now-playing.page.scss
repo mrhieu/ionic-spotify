@@ -1,0 +1,39 @@
+.album-cover {
+  text-align: center;
+  padding: 8px 16px;
+
+  ion-thumbnail {
+    width: 240px;
+    height: 240px;
+    margin: 0 auto;
+  }
+}
+
+.song-title {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 4px;
+}
+
+.song-timeline {
+  font-size: 12px;
+
+  ion-progress-bar {
+    margin-bottom: 8px;
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  ion-button {
+    margin: 0 4px;
+  }
+
+  ion-fab-button {
+    min-width: 56px;
+  }
+}

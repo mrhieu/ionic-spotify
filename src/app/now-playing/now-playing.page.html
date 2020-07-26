@@ -1,9 +1,77 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>nowPlaying</ion-title>
+<ion-header class="ion-no-border">
+  <ion-toolbar color="light">
+    <ion-buttons slot="start">
+      <ion-button color="medium" (click)="closeModal()">
+        <ion-icon slot="icon-only" name="chevron-down"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title>Daily Mix 3</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button color="medium">
+        <ion-icon slot="icon-only" name="ellipsis-horizontal"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="bg-gradient">
+  <div class="album-cover">
+    <ion-thumbnail>
+      <img src="{{'assets/img/img_2.png'}}" alt="">
+    </ion-thumbnail>
+  </div>
 
+  <div class="song-info ion-padding">
+    <div class="song-title">
+      Your Daily Mix 1
+    </div>
+    <div class="artist-name">
+      <ion-text color="medium">Multiple Artists</ion-text>
+    </div>
+  </div>
+
+  <div class="song-timeline ion-padding">
+    <ion-progress-bar value="0.25"></ion-progress-bar>
+    <ion-row class="grid-no-padding ion-justify-content-between">
+      <ion-col size="auto">
+        0:53
+      </ion-col>
+      <ion-col size="auto">
+        -4:18
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <div class="buttons ion-padding">
+    <ion-button color="dark" fill="clear" size="small">
+      <ion-icon slot="icon-only" name="heart-outline"></ion-icon>
+    </ion-button>
+    <ion-button color="dark" fill="clear" size="small">
+      <ion-icon slot="icon-only" name="play-skip-back-sharp"></ion-icon>
+    </ion-button>
+    <ion-fab-button color="dark">
+      <ion-icon name="play-sharp"></ion-icon>
+    </ion-fab-button>
+    <ion-button color="dark" fill="clear" size="small">
+      <ion-icon slot="icon-only" name="play-skip-forward-sharp"></ion-icon>
+    </ion-button>
+    <ion-button color="dark" fill="clear" size="small">
+      <ion-icon slot="icon-only" name="repeat-outline"></ion-icon>
+    </ion-button>
+  </div>
 </ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="medium">
+        <ion-icon slot="icon-only" name="desktop-outline" size="small"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-icon slot="icon-only" name="share-outline" size="small"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { NowPlayingPage } from '../now-playing/now-playing.page';
 
 @Component({
   selector: 'app-tabs',
@@ -7,6 +9,16 @@ import { Component } from '@angular/core';
 })
 export class TabsPage {
 
-  constructor() {}
+  constructor(public modalCtrl: ModalController) {}
 
+  ngOnInit() {
+
+  }
+
+  async openNowPlaying() {
+    const modal = await this.modalCtrl.create({
+      component: NowPlayingPage
+    });
+    return await modal.present();
+  }
 }

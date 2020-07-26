@@ -7,6 +7,11 @@ ion-icon {
   vertical-align: middle;
 }
 
+
+.bg-gradient {
+  --background: linear-gradient(var(--ion-color-light), var(--ion-color-step-50));
+}
+
 .card-thumbnail {
   position: relative;
   height: 220px;
