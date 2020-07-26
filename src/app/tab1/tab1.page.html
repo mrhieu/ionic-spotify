@@ -1,17 +1,99 @@
-<ion-header [translucent]="true">
+<ion-header [translucent]="true" class="ion-no-border">
   <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="dark">
+        <ion-icon slot="icon-only" name="settings-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="collection">
+    <div class="collection-title">
+      Good evening
+    </div>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+    <div class="scroll-horizontal">
+      <div class="scroll-item" *ngFor="let i of [0,1,2]">
+        <div class="media-card">
+          <ion-row class="grid-no-padding ion-align-items-center">
+            <ion-col size="auto">
+              <ion-thumbnail>
+                <img src="{{'assets/img/img_' + (i%5 + 1) + '.png'}}" alt="">
+              </ion-thumbnail>
+            </ion-col>
+
+            <ion-col class="ion-padding-start">
+              <strong>Daily Mix 3</strong>
+            </ion-col>
+          </ion-row>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="collection">
+    <div class="collection-title">
+      Recently played
+    </div>
+
+    <div class="scroll-horizontal">
+      <div class="scroll-item size-sm" *ngFor="let i of [0,1,2,3,4,5,6]">
+        <div class="card-thumbnail size-sm" [style.backgroundImage]="'url(assets/img/img_' + (i%5 + 1) + '.png)'"></div>
+        <div class="item-title">
+          <ion-icon name="shuffle-outline"></ion-icon>
+          Daily Mix {{i + 1}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="collection">
+    <div class="collection-title">
+      Made for Hieu
+    </div>
+
+    <div class="scroll-horizontal">
+      <div class="scroll-item size-md" *ngFor="let i of [0,1,2,3,4,5,6]">
+        <div class="card-thumbnail size-md" [style.backgroundImage]="'url(assets/img/img_' + (i%5 + 1) + '.png)'"></div>
+        <div class="item-title">
+          <ion-icon name="shuffle-outline"></ion-icon>
+          Daily Mix {{i + 1}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="collection">
+    <div class="collection-title">
+      Uniquely yours
+    </div>
+
+    <div class="scroll-horizontal">
+      <div class="scroll-item size-md" *ngFor="let i of [0,1,2,3,4,5,6]">
+        <div class="card-thumbnail size-md" [style.backgroundImage]="'url(assets/img/img_' + (i%5 + 1) + '.png)'"></div>
+        <div class="item-title">
+          <ion-icon name="shuffle-outline"></ion-icon>
+          Daily Mix {{i + 1}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="collection">
+    <div class="collection-title">
+      Based on your recent listening
+    </div>
+
+    <div class="scroll-horizontal">
+      <div class="scroll-item size-md" *ngFor="let i of [0,1,2,3,4,5,6]">
+        <div class="card-thumbnail size-md" [style.backgroundImage]="'url(assets/img/img_' + (i%5 + 1) + '.png)'"></div>
+        <div class="item-title">
+          <ion-icon name="shuffle-outline"></ion-icon>
+          Daily Mix {{i + 1}}
+        </div>
+      </div>
+    </div>
+  </div>
 </ion-content>

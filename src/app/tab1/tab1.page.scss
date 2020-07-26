@@ -1,0 +1,38 @@
+.collection {
+  margin-bottom: 16px;
+
+  .scroll-horizontal {
+    padding: 0 16px;
+  }
+
+  .collection-title {
+    font-size: 22px;
+    font-weight: 700;
+    padding: 8px 16px 16px;
+  }
+
+  .media-card {
+    background-color: var(--ion-color-light);
+    border-radius: 4px;
+    overflow: hidden;
+    font-size: 13px;
+    width: 180px;
+    height: 48px;
+  }
+
+  .scroll-item {
+    &.size-sm {
+      width: 120px;
+    }
+
+    &.size-md {
+      width: 200px;
+    }
+  }
+
+  .item-title {
+    padding: 8px 0;
+    font-size: 13px;
+    white-space: break-spaces;
+  }
+}

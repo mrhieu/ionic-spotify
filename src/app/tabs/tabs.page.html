@@ -1,19 +1,55 @@
 <ion-tabs>
+  <div class="playing-bar">
+    <ion-progress-bar value="0.25"></ion-progress-bar>
 
-  <ion-tab-bar slot="bottom">
+    <ion-row class="grid-no-padding ion-align-items-center">
+      <ion-col size="auto">
+        <ion-thumbnail>
+          <img src="assets/img/img_2.png" alt="">
+        </ion-thumbnail>
+      </ion-col>
+
+      <ion-col>
+        <div class="playing-info">
+          <div class="song-info">
+            <span>Em khong quay ve</span>
+            <span> · </span>
+            <span><ion-text color="medium">YanBi</ion-text></span>
+          </div>
+          <div class="device-info">
+            <ion-icon name="desktop-outline" size="small"></ion-icon>
+            Devices Available
+          </div>
+        </div>
+      </ion-col>
+
+      <ion-col size="auto">
+        <ion-button fill="clear" color="medium" size="small">
+        	<ion-icon slot="icon-only" name="play-sharp"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <ion-tab-bar slot="bottom" color="light">
     <ion-tab-button tab="tab1">
-      <ion-icon name="triangle"></ion-icon>
-      <ion-label>Tab 1</ion-label>
+      <ion-icon name="home-sharp"></ion-icon>
+      <ion-label>Home</ion-label>
     </ion-tab-button>
 
     <ion-tab-button tab="tab2">
-      <ion-icon name="ellipse"></ion-icon>
-      <ion-label>Tab 2</ion-label>
+      <ion-icon name="search-outline"></ion-icon>
+      <ion-label>Search</ion-label>
     </ion-tab-button>
 
     <ion-tab-button tab="tab3">
-      <ion-icon name="square"></ion-icon>
-      <ion-label>Tab 3</ion-label>
+      <ion-icon name="library-outline"></ion-icon>
+      <ion-label>Your Library</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="tab3">
+      <ion-icon name="filter-outline"></ion-icon>
+      <ion-label>Premium</ion-label>
     </ion-tab-button>
   </ion-tab-bar>
 

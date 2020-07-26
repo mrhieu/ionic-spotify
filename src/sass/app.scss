@@ -1,0 +1,53 @@
+ion-row.grid-no-padding {
+  --ion-grid-padding: 0;
+  --ion-grid-column-padding: 0;
+}
+
+ion-icon {
+  vertical-align: middle;
+}
+
+.card-thumbnail {
+  position: relative;
+  height: 220px;
+  background-color: var(--ion-color-medium);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  .card-caption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 12px;
+    color: #fff;
+    background-image: linear-gradient(to top, rgba(0,0,0,.66), rgba(0,0,0,0));
+  }
+
+  &.size-sm {
+    width: 120px;
+    height: 120px;
+  }
+
+  &.size-md {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.playing-bar {
+  background-color: var(--ion-color-light);
+  color: var(--ion-color-light-contrast);
+  border-bottom: 0.55px solid var(--ion-color-light-shade);
+
+  .playing-info {
+    padding: 4px 12px;
+    font-size: 13px;
+    line-height: 1.5;
+
+    .device-info {
+      font-size: 11px;
+    }
+  }
+}
