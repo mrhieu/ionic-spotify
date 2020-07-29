@@ -1,0 +1,60 @@
+ion-header ion-toolbar {
+  --background: var(--ion-background-color);
+}
+
+ion-searchbar {
+  --background: var(--ion-text-color);
+  --color: var(--ion-background-color);
+}
+
+.category-list {
+  padding: 8px;
+  display: flex;
+  flex-wrap: wrap;
+
+  .category-item {
+    margin: 8px;
+    background-color: #d6933d;
+    position: relative;
+    height: 100px;
+    border-radius: 4px;
+    overflow: hidden;
+    width: calc(50% - 16px);
+
+    &.color-2 {
+      background-color: #8da4b0;
+    }
+
+    &.color-3 {
+      background-color: #5a8a79;
+    }
+
+    &.color-4 {
+      background-color: #e06943;
+    }
+
+    .title {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      padding: 12px;
+      font-weight: 700;
+      font-size: 18px;
+      z-index: 2;
+      letter-spacing: 0.5px;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, .2);
+    }
+
+    .card-thumbnail {
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      top: 26px;
+      right: -26px;
+      z-index: 1;
+      transform: rotate(21deg);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, .2);
+    }
+  }
+}

@@ -1,17 +1,65 @@
-<ion-header [translucent]="true">
+<ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
+    <ion-title size="large">Search</ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-searchbar placeholder="Artist, songs, or podcasts"></ion-searchbar>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-item lines="none">
+    <ion-label><strong>Browse all</strong></ion-label>
+  </ion-item>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <div class="category-list">
+    <div class="category-item">
+      <div class="title">
+        Podcasts
+      </div>
+      <div class="card-thumbnail" [style.backgroundImage]="'url(assets/img/img_1.png)'"></div>
+    </div>
+    <div class="category-item color-2">
+      <div class="title">
+        New Releases
+      </div>
+      <div class="card-thumbnail" [style.backgroundImage]="'url(assets/img/img_2.png)'"></div>
+    </div>
+    <div class="category-item color-3">
+      <div class="title">
+        Charts
+      </div>
+      <div class="card-thumbnail" [style.backgroundImage]="'url(assets/img/img_3.png)'"></div>
+    </div>
+    <div class="category-item color-4">
+      <div class="title">
+        Concerts
+      </div>
+      <div class="card-thumbnail" [style.backgroundImage]="'url(assets/img/img_4.png)'"></div>
+    </div>
+    <div class="category-item">
+      <div class="title">
+        Made for You
+      </div>
+      <div class="card-thumbnail" [style.backgroundImage]="'url(assets/img/img_1.png)'"></div>
+    </div>
+    <div class="category-item color-2">
+      <div class="title">
+        At Home
+      </div>
+      <div class="card-thumbnail" [style.backgroundImage]="'url(assets/img/img_2.png)'"></div>
+    </div>
+    <div class="category-item color-3">
+      <div class="title">
+        Pride
+      </div>
+      <div class="card-thumbnail" [style.backgroundImage]="'url(assets/img/img_3.png)'"></div>
+    </div>
+    <div class="category-item color-4">
+      <div class="title">
+        Pop
+      </div>
+      <div class="card-thumbnail" [style.backgroundImage]="'url(assets/img/img_4.png)'"></div>
+    </div>
+  </div>
 </ion-content>
