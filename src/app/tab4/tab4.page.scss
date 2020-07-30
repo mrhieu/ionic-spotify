@@ -1,0 +1,45 @@
+ion-header ion-toolbar{
+  --background: var(--ion-background-color);
+}
+
+.title {
+  padding: 16px;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.plan-list {
+  padding: 16px;
+
+  .plan-item {
+    margin-bottom: 24px;
+    padding: 24px;
+    text-align: center;
+    border-radius: 8px;
+    background: linear-gradient(to bottom right, #265546, #59b277);
+
+    &.color-2 {
+      background: linear-gradient(to bottom right, #E69D42, #BC805B);
+    }
+
+    &.color-3 {
+      background: linear-gradient(to bottom right, #6891BD, #403F72);
+    }
+
+    &.color-4 {
+      background: linear-gradient(to bottom right, #263261, #6E367C);
+    }
+
+  }
+
+  .plan-title {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  .plan-description {
+    font-size: 14px;
+  }
+}

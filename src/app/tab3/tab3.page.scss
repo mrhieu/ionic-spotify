@@ -1,0 +1,40 @@
+ion-header ion-toolbar {
+  --background: var(--ion-background-color);
+}
+
+.subtab-button {
+  color: var(--ion-color-medium);
+
+  &.active {
+    color: #fff;
+  }
+
+  & + .subtab-button {
+    margin-left: 24px;
+  }
+}
+
+.search-bar {
+  ion-searchbar {
+    padding-right: 0;
+  }
+
+  ion-button {
+    height: 36px;
+    padding-right: 12px;
+  }
+}
+
+.add-thumnail {
+  background-color: var(--ion-color-light);
+  height: 56px;
+  width: 56px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ion-list ion-item {
+  margin-bottom: 8px;
+}
