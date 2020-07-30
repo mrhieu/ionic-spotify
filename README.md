@@ -4,7 +4,7 @@
 
 [Demo](https://mrhieu.github.io/ionic-spotify/)
 
-![Simulator Screen Shot - iPhone SE (2nd generation) - 2020-06-21 at 18 50 49](<PROJECT_SCREENSHOT>)
+![thumbnail_320](https://user-images.githubusercontent.com/1593560/88878845-65343a80-d25b-11ea-80b1-fc61158254d4.png)
 
 
 

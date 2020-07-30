@@ -3,6 +3,8 @@ import { Component } from '@angular/core';
 import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { Plugins, StatusBarStyle } from '@capacitor/core';
+const { StatusBar: StatusBarPlugin } = Plugins;
 
 @Component({
   selector: 'app-root',
@@ -22,6 +24,17 @@ export class AppComponent {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
+
+      // Set statusbar text color
+      // iOS only
+      StatusBarPlugin.setStyle({
+        style: StatusBarStyle.Dark
+      });
+
+      // Android only
+      StatusBarPlugin.setBackgroundColor({
+        color: '#0f0f0f'
+      })
     });
   }
 }

@@ -6,7 +6,7 @@ ion-header ion-toolbar {
   color: var(--ion-color-medium);
 
   &.active {
-    color: #fff;
+    color: var(--ion-text-color);
   }
 
   & + .subtab-button {
